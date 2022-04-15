@@ -67,7 +67,7 @@ new Vue({
       this.isPhotoTaken = !this.isPhotoTaken;
       
       const context = this.$refs.canvas.getContext('2d');
-      context.drawImage(this.$refs.camera, 0, 0, 450, 337.5);
+      context.drawImage(this.$refs.camera, 0, 0, 337.5, 450);
     },
     
     downloadImage() {
