@@ -1,2 +1,2 @@
 # Camera-app
- Testing for mobile app
+ Tests for mobile app
