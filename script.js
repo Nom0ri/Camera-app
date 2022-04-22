@@ -27,10 +27,11 @@ new Vue({
     createCameraElement() {
       this.isLoading = true;
       
-      const constraints = (video.constraints = {
+      const constraints = (window.constraints = {
 				audio: false,
-				video: true,
-	      			facingMode: "environment"
+				video: {
+	      				facingMode: "environment"
+					}
 			});
 
 
