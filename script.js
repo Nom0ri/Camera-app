@@ -68,8 +68,10 @@ new Vue({
       
       this.isPhotoTaken = !this.isPhotoTaken;
       
+      const width = 414;
+		  const height = width / (9/16);
       const context = this.$refs.canvas.getContext('2d');
-      context.drawImage(this.$refs.camera, 0, 0, 337.5, 450);
+      context.drawImage(this.$refs.camera, 0, 0, width, height);
     },
     
     downloadImage() {
