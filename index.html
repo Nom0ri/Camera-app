@@ -31,9 +31,9 @@
       
       <div class="camera-shutter" :class="{'flash' : isShotPhoto}"></div>
         
-      <video v-show="!isPhotoTaken" ref="camera" :width="253.125" :height="450" autoplay></video>
+      <video v-show="!isPhotoTaken" ref="camera" :width="414" :height="736" autoplay></video>
       
-      <canvas v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="253.125" :height="450"></canvas>
+      <canvas v-show="isPhotoTaken" id="photoTaken" ref="canvas" :width="414" :height="736"></canvas>
     </div>
     
     <div v-if="isCameraOpen && !isLoading" class="camera-shoot">
