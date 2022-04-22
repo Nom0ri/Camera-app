@@ -30,7 +30,7 @@ new Vue({
       const constraints = (constraints = {
 				audio: false,
 				video: true,
-	      			facingMode: environment
+	      			facingMode: "environment"
 			});
 
 
